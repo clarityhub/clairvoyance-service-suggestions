@@ -1,0 +1,65 @@
+{
+  "development": {
+    "port": "3000",
+    "key": "jwt-secret.pem",
+    "database": {
+      "username": "postgres",
+      "password": "postgres",
+      "database": "clairvoyance_suggestions_development",
+      "host": "postgres",
+      "dialect": "postgres"
+    },
+    "pubsub": {
+      "host": "rabbitmq",
+      "username": "claire",
+      "password": "claire",
+      "port": "5672"
+    },
+    "redis": {
+      "host": "redis",
+      "port": "6379"
+    }
+  },
+  "test": {
+    "port": "3001",
+    "key": "jwt-secret.pem",
+    "database": {
+      "username": "postgres",
+      "password": "postgres",
+      "database": "clairvoyance_suggestions_test",
+      "host": "postgres",
+      "dialect": "postgres"
+    },
+    "pubsub": {
+      "host": "rabbitmq",
+      "username": "claire",
+      "password": "claire",
+      "port": "5672"
+    },
+    "redis": {
+      "host": "redis",
+      "port": "6379"
+    }
+  },
+  "production": {
+    "port": "3000",
+    "key": "jwt-secret.pem",
+    "database": {
+      "username": "postgres",
+      "password": "postgres",
+      "database": "clairvoyance_suggestions_production",
+      "host": "postgres",
+      "dialect": "postgres"
+    },
+    "pubsub": {
+      "host": "rabbitmq",
+      "username": "claire",
+      "password": "claire",
+      "port": "5672"
+    },
+    "redis": {
+      "host": "redis",
+      "port": "6379"
+    }
+  }
+}
